@@ -18,8 +18,6 @@ const App = () => {
           <Footer/>
         </BrowserRouter>        
       </Provider>
-
-
     )
 }
 
