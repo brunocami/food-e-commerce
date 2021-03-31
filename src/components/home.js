@@ -15,26 +15,28 @@ const Home = () => {
                     <button className="uk-button uk-button-default uk-button-large">CLICK TO EMAIL</button>
                 </p>
             </div>
-            <div className="container p-5 mw-100 d-flex align-items-center" style={{background: "url(/images/woodBG.png)", height: "90vh"}}>
-                <div className="uk-child-width-1-2@s uk-grid-match d-flex justify-content-around w-100 h-25" uk-grid>
-                    <NavLink to="/tragos" className="text-decoration-none">
-                        <div className="m-3">
-                            <div className="uk-card uk-card-default uk-card-hover uk-card-body text-center">
-                                <h3 className="uk-card-title text-center">TRAGOS</h3>
-                                <hr class="uk-divider-small"></hr>
-                                <p className="text-center">click to view our menu</p>
+            <div className="container mw-100 bg-info">
+                <div className="uk-child-width-1-2@s uk-grid-match" uk-grid>
+                    <div className="container">
+                        <NavLink to="/tragos" className="text-decoration-none col-12 col-lg-6">
+                            <div className="m-3">
+                                <div className="uk-card uk-card-default uk-card-hover uk-card-body text-center bg-dark bg-dark text-white">
+                                    <h3 className="uk-card-title text-center text-white">TRAGOS</h3>
+                                    <hr class="uk-divider-small"></hr>
+                                    <p className="text-center">click to view our menu</p>
+                                </div>
                             </div>
-                        </div>                        
-                    </NavLink>
-                    <NavLink to="/comida" className="text-decoration-none">
-                        <div className="m-3">
-                            <div className="uk-card uk-card-default uk-card-hover uk-card-body text-center">
-                                <h3 className="uk-card-title text-center">COMIDA</h3>
-                                <hr class="uk-divider-small"></hr>
-                                <p className="text-center">click to view our menu</p>
+                        </NavLink>
+                        <NavLink to="/comida" className="text-decoration-none col-12 col-lg-6">
+                            <div className="m-3">
+                                <div className="uk-card uk-card-default uk-card-hover uk-card-body text-center bg-dark text-white">
+                                    <h3 className="uk-card-title text-center text-white">COMIDA</h3>
+                                    <hr class="uk-divider-small"></hr>
+                                    <p className="text-center">click to view our menu</p>
+                                </div>
                             </div>
-                        </div>                        
-                    </NavLink>
+                        </NavLink>
+                    </div>
                 </div>
             </div>
         </div>

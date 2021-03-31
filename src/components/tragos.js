@@ -9,25 +9,6 @@ const mapStateToProps = (state) => {
 
 class Tragos extends Component {
 
-    constructor(props){
-        super(props);
-        this.state = {
-          contador : 0
-        }; 
-      }
-      increase() {
-        this.setState({
-           contador: this.state.contador+1
-        });
-      }
-      decrease() {
-        if(this.state.contador > 1){
-            this.setState({
-                contador: this.state.contador
-            })            
-        }
-      }
-
     createListItems() {
         return this.props.drinks.map((drinks) => {
             return(
@@ -42,9 +23,9 @@ class Tragos extends Component {
                         <div className="card-body p-0" key={drinks.id} id="acordion">
                             <h5 className="card-title text-center">{drinks.name}</h5>
                             <p className="text-center">US${drinks.price}</p>
-                            <button class="uk-button uk-button-default col-4" onClick={this.decrease}>-</button>
-                            <button class="uk-button uk-button-default col-4">{this.state.contador}</button>
-                            <button class="uk-button uk-button-default col-4" onClick={this.increase}>+</button>
+                            <button class="uk-button uk-button-default col-4">-</button>
+                            <button class="uk-button uk-button-default col-4">1</button>
+                            <button class="uk-button uk-button-default col-4">+</button>
                             
                             <div className="collapse" id={"collapse-" + drinks.id}>
                                 <p className="card-text text-secondary">FERMENTACIÓN MALOLÁCTICA NATURAL . Vino rubí , reflejos granates , seductor , mediana intensidad . notas de Frutos rojos , pimienta negra , chocolate , café y humo de roble francés . balanceado , acidez equilibrada , taninos suaves y dulces . es ideal para acompañar carnes rojas , pastas bien condimentadas y quesos semiduros .</p>

@@ -1,6 +1,11 @@
 import React from 'react'
 
 const Footer = () => {
+
+    const redirect = () => {
+        {window.location.href="https://www.instagram.com/bruno_cami/?hl=es-la"}
+    }
+
     return (
         <div className="jumbotron jumbotron-fluid mb-0 p-3 bg-dark d-flex justify-content-around">
             <div className="card" style={{width: "18rem"}}>
@@ -19,7 +24,14 @@ const Footer = () => {
                     <a className="text-white  text-decoration-none">0800 222 4678</a>
                     <a className="text-white  text-decoration-none">empanadas@hotmail.com</a>                    
                 </div>
-
+                <div className="d-flex justify-content-center">
+                    <a>
+                        <span className="text-danger" uk-icon="instagram" style={{marginRight: "15px"}} onClick={redirect}/>
+                    </a>
+                    <a>
+                        <span className="text-success" uk-icon="whatsapp"/>
+                    </a>                                   
+                </div>
             </div>
         </div>
     )
